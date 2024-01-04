@@ -2561,7 +2561,19 @@ input, select, textarea {
 			opacity: 0.25;
 		}
 
+
+		
+
 /* Tiles */
+
+	.years {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 30px;
+		font-weight: 900;
+		padding: 15px;
+	}
 
 	.tiles {
 		display: -moz-flex;
@@ -2749,10 +2761,6 @@ input, select, textarea {
 				max-height: 15em;
 				opacity: 1;
 			}
-
-		* + .tiles {
-			margin-top: 2em;
-		}
 
 		body.is-preload .tiles article {
 			-moz-transform: scale(0.9);
