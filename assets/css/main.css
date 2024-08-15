@@ -2150,7 +2150,7 @@ input, select, textarea {
 		color: inherit;
 		display: block;
 		outline: 0;
-		padding: 0;
+		margin: 0;
 		text-decoration: none;
 		width: 100%;
 	}
@@ -2205,7 +2205,7 @@ input, select, textarea {
 
 	textarea {
 		padding: 0;
-		min-height: 3.75em;
+		min-height: 3em;
 	}
 
 	input[type="checkbox"],
