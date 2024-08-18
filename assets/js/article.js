@@ -120,6 +120,13 @@ const articles = [
       category: "B2"
   },
   {
+      image: "images/pic07.jpg",
+      link: "B2/Reseaux.html",
+      title: "Reseaux",
+      description: "Un module pour nous apprendre les bases des réseaux, les ips, les routeurs, les switchs et les commandes de base.",
+      category: "B2"
+},
+  {
       image: "images/pic09.jpg",
       link: "B2/PHP.html",
       title: "PHP",
@@ -141,12 +148,55 @@ const articles = [
       category: "B2"
   },
   {
-      image: "images/pic07.jpg",
-      link: "STAGE/Stage.html",
-      title: "Stage B2",
-      description: "Réalisation d'un site web via WordPress pour une sophrologue.",
-      category: "Stage"
-  }
+      image: "images/pic02.jpg",
+      link: "B2/GameProgramming.html",
+      title: "GameProgramming",
+      description: "Probablement le meilleur module de cette année. Nous devions réaliser un jeu dans le style de Mario Bros sur Unity",
+      category: "B2"
+  },
+  {
+      image: "images/pic10.jpg",
+      link: "B2/Accessibilite.html",
+      title: "Accessibilite",
+      description: "Un module en lien avec l'UX et qui malheuresement ne nous sert à rien puisque ça n'a rien à voir avec notre parcours.",
+      category: "B2"
+  },
+  {
+      image: "images/pic08.jpg",
+      link: "B2/IOT.html",
+      title: "IOT",
+      description: "Un module assez particulier puisque nous devions developper un puce Anti Covid",
+      category: "B2"
+  },
+  {
+      image: "images/pic01.jpg",
+      link: "B2/ProjetDev.html",
+      title: "ProjetDev",
+      description: "Un enorme module de dev sur toute l'année pour réaliser un jeu vidéo avec system de matchmaking et implémentation d'une IA",
+      category: "B2"
+  },
+  {
+      image: "images/pic03.jpg",
+      link: "B2/ServerWindows.html",
+      title: "ServerWindows",
+      description: "Un petit module pour nous apprendre la gestion de server windows",
+      category: "B2"
+  },
+  {
+    image: "images/pic04.jpg",
+    link: "B2/Securite.html",
+    title: "Securite",
+    description: "Suite du projet PHP, la création d'un login sécurisé",
+    category: "B2"
+  },
+  {
+    image: "images/pic07.jpg",
+    link: "STAGE/Stage.html",
+    title: "Stage B2",
+    description: "Réalisation d'un site web via WordPress pour une sophrologue.",
+    category: "Stage"
+},
+
 ];
 
 // Fonction pour ajuster les liens en fonction de la page actuelle
