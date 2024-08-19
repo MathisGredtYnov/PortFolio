@@ -2,7 +2,7 @@
 const articles = [
   {
       image: "images/pic15.jpg",
-      link: "PortFolio/B1/Ymmersion.html",
+      link: "B1/Ymmersion.html",
       title: "Ymmersion",
       description: "Le tout premier projet, réaliser un jeu vidéo en goolang dans le terminal avec un univers que l'on pouvait choisir.",
       category: "B1"
@@ -209,7 +209,7 @@ function adjustLink(link) {
       return `html/${link}`;
   } else {
       // Sinon, les liens sont relatifs au dossier actuel
-      return `../${link}`;
+      return `Portfolio/${link}`;
   }
 }
 
