@@ -200,20 +200,20 @@ const articles = [
 ];
 
 // Fonction pour ajuster les liens en fonction de la page actuelle
-function adjustLink(link) {
-  // Vérifier si on est sur la page index ou dans un sous-dossier
-  const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+// function adjustLink(link) {
+//   // Vérifier si on est sur la page index ou dans un sous-dossier
+//   const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
   
-  // Si on est sur la page index, on ajoute "html/" devant les liens
-  if (isIndexPage) {
-      return `${link}`;
-  } else {
-      // Sinon, les liens sont relatifs au dossier actuel
-      return `Portfolio/${link}`;
-  }
-}
+//   // Si on est sur la page index, on ajoute "html/" devant les liens
+//   if (isIndexPage) {
+//       return `${link}`;
+//   } else {
+//       // Sinon, les liens sont relatifs au dossier actuel
+//       return `Portfolio/${link}`;
+//   }
+// }
 
-// Ajuster les liens pour chaque article
-articles.forEach(article => {
-  article.link = adjustLink(article.link);
-});
+// // Ajuster les liens pour chaque article
+// articles.forEach(article => {
+//   article.link = adjustLink(article.link);
+// });
