@@ -202,7 +202,7 @@ const articles = [
 //Fonction pour ajuster les liens en fonction de la page actuelle
 function adjustLink(link) {
   // Vérifier si on est sur la page index ou dans un sous-dossier
-  const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+  const isIndexPage = window.location.pathname.endsWith('/Portfolio/index.html') || window.location.pathname === '/Portfolio/';
   
   // Si on est sur la page index, on ajoute "html/" devant les liens
   if (isIndexPage) {
