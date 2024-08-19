@@ -9,28 +9,28 @@ const articles = [
   },
   {
       image: "images/pic07.jpg",
-      link: "html/B1/Hangman.html",
+      link: "B1/Hangman.html",
       title: "Hangman",
       description: "L'un des premiers projets, son but était de nous apprendre le goolang en faisant un petit jeu du pendu dans le terminal.",
       category: "B1"
   },
   {
       image: "images/pic08.jpg",
-      link: "html/B1/HangmanWeb.html",
+      link: "B1/HangmanWeb.html",
       title: "Hangman Web",
       description: "Le même projet que Hangman mais cette fois avec la relation entre le web et le go pour un meilleur affichage sur un site web.",
       category: "B1"
   },
   {
       image: "images/pic05.jpg",
-      link: "html/B1/POO.html",
+      link: "B1/POO.html",
       title: "Programmation orientée objet",
       description: "Un autre cours scolaire pour nous apprendre la programmation orientée objet sur plusieurs langages de programmation.",
       category: "B1"
   },
   {
       image: "images/pic03.jpg",
-      link: "html/B1/Java.html",
+      link: "B1/Java.html",
       title: "Java",
       description: "Un projet plus scolaire pour nous apprendre le langage Java à travers de nombreux exercices.",
       category: "B1"
@@ -199,21 +199,18 @@ const articles = [
 
 ];
 
-// Fonction pour ajuster les liens en fonction de la page actuelle
-// function adjustLink(link) {
-//   // Vérifier si on est sur la page index ou dans un sous-dossier
-//   const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+//Fonction pour ajuster les liens en fonction de la page actuelle
+function adjustLink(link) {
+  // Vérifier si on est sur la page index ou dans un sous-dossier
+  const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
   
-//   // Si on est sur la page index, on ajoute "html/" devant les liens
-//   if (isIndexPage) {
-//       return `${link}`;
-//   } else {
-//       // Sinon, les liens sont relatifs au dossier actuel
-//       return `Portfolio/${link}`;
-//   }
-// }
+  // Si on est sur la page index, on ajoute "html/" devant les liens
+  if (isIndexPage) {
+      return `html/${link}`;
+  }
+}
 
-// // Ajuster les liens pour chaque article
-// articles.forEach(article => {
-//   article.link = adjustLink(article.link);
-// });
+// Ajuster les liens pour chaque article
+articles.forEach(article => {
+  article.link = adjustLink(article.link);
+});
