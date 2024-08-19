@@ -210,7 +210,7 @@ function adjustLink(link) {
     if (isIndexPage) {
       return `html/${link}`;
     } else {
-      return `../${link}`;
+      return link;
     }
   }
   
