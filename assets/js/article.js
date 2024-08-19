@@ -206,7 +206,7 @@ function adjustLink(link) {
   
   // Si on est sur la page index, on ajoute "html/" devant les liens
   if (isIndexPage) {
-      return `html/${link}`;
+      return `${link}`;
   } else {
       // Sinon, les liens sont relatifs au dossier actuel
       return `Portfolio/${link}`;
