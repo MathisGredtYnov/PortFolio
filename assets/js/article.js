@@ -2,7 +2,7 @@
 const articles = [
   {
       image: "images/pic15.jpg",
-      link: "html/B1/Ymmersion.html",
+      link: "B1/Ymmersion.html",
       title: "Ymmersion",
       description: "Le tout premier projet, réaliser un jeu vidéo en goolang dans le terminal avec un univers que l'on pouvait choisir.",
       category: "B1"
@@ -198,3 +198,21 @@ const articles = [
 },
 
 ];
+
+//Fonction pour ajuster les liens en fonction de la page actuelle
+function adjustLink(link) {
+  // Vérifier si on est sur la page index ou dans un sous-dossier
+  const isIndexPage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+  
+  // Si on est sur la page index, on ajoute "html/" devant les liens
+  if (isIndexPage) {
+      return `html/${link}`;
+  } else {
+      return link;
+  }
+}
+
+// Ajuster les liens pour chaque article
+articles.forEach(article => {
+  article.link = adjustLink(article.link);
+});
