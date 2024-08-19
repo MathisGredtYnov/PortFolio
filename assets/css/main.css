@@ -2996,7 +2996,6 @@ input, select, textarea {
 		-webkit-overflow-scrolling: touch;
 		background: #585858;
 		color: #ffffff;
-		cursor: default;
 		visibility: hidden;
 		z-index: 10002;
 	}
@@ -3136,12 +3135,13 @@ input, select, textarea {
 
 		body.is-menu-visible {
 			overflow: hidden;
+			
 		}
 		
 		body.is-menu-visible #wrapper {
 			pointer-events: none;
-			cursor: default;
 			opacity: 0.25;
+			cursor: url("../../images/curseur.png");
 		}
 		
 		body.is-menu-visible #menu {
@@ -3150,6 +3150,7 @@ input, select, textarea {
 			-ms-transform: translateX(0);
 			transform: translateX(0);
 			visibility: visible;
+			
 		}
 		
 		body.is-menu-visible #menu > * {
