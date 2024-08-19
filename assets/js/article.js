@@ -2,7 +2,7 @@
 const articles = [
   {
       image: "images/pic15.jpg",
-      link: "B1/Ymmersion.html",
+      link: "PortFolio/B1/Ymmersion.html",
       title: "Ymmersion",
       description: "Le tout premier projet, réaliser un jeu vidéo en goolang dans le terminal avec un univers que l'on pouvait choisir.",
       category: "B1"
