@@ -2,7 +2,7 @@
 const articles = [
   {
       image: "images/pic15.jpg",
-      link: "html/B1/Ymmersion.html",
+      link: "B1/Ymmersion.html",
       title: "Ymmersion",
       description: "Le tout premier projet, réaliser un jeu vidéo en goolang dans le terminal avec un univers que l'on pouvait choisir.",
       category: "B1"
@@ -183,18 +183,18 @@ const articles = [
       category: "B2"
   },
   {
-    image: "images/pic04.jpg",
-    link: "B2/Securite.html",
-    title: "Securite",
-    description: "Suite du projet PHP, la création d'un login sécurisé",
-    category: "B2"
+      image: "images/pic04.jpg",
+      link: "B2/Securite.html",
+      title: "Securite",
+      description: "Suite du projet PHP, la création d'un login sécurisé",
+      category: "B2"
   },
   {
-    image: "images/pic07.jpg",
-    link: "STAGE/Stage.html",
-    title: "Stage B2",
-    description: "Réalisation d'un site web via WordPress pour une sophrologue.",
-    category: "Stage"
+      image: "images/pic07.jpg",
+      link: "STAGE/Stage.html",
+      title: "Stage B2",
+      description: "Réalisation d'un site web via WordPress pour une sophrologue.",
+      category: "Stage"
 },
 
 ];
