@@ -24,7 +24,10 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
+	cursor: url("../../images/curseur.png"), auto;
 	line-height: 1;
+	
+
 }
 
 ol, ul {
@@ -146,6 +149,7 @@ input, select, textarea {
 		a:hover {
 			border-bottom-color: transparent;
 			color: #f2849e !important;
+			cursor: url("../../images/curseurhover.png"), auto;
 		}
 
 	strong, b {
@@ -2578,7 +2582,7 @@ input, select, textarea {
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		postiion: relative;
+		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
