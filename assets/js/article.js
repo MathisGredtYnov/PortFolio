@@ -30,7 +30,7 @@ const articles = [
   },
   {
       image: "images/pic03.jpg",
-      link: "B1/Java.html",
+      link: "html/B1/Java.html",
       title: "Java",
       description: "Un projet plus scolaire pour nous apprendre le langage Java à travers de nombreux exercices.",
       category: "B1"
@@ -206,7 +206,7 @@ function adjustLink(link) {
   
   // Si on est sur la page index, on ajoute "html/" devant les liens
   if (isIndexPage) {
-      return `${link}`;
+      return `html/${link}`;
   } else {
       // Sinon, les liens sont relatifs au dossier actuel
       return `Portfolio/${link}`;
