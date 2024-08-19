@@ -199,20 +199,23 @@ const articles = [
 
 ];
 
-//Fonction pour ajuster les liens en fonction de la page actuelle
 function adjustLink(link) {
-  // Vérifier si on est sur la page index ou dans un sous-dossier
-  const isIndexPage = window.location.pathname.endsWith('https://mathisgredtynov.github.io/PortFolio/index.html') || window.location.pathname === 'https://mathisgredtynov.github.io/PortFolio/';
+    // Vérifier si on est sur la page index ou dans un sous-dossier
+    const path = window.location.pathname;
   
-  // Si on est sur la page index, on ajoute "html/" devant les liens
-  if (isIndexPage) {
+    // Page d'index ou répertoire racine
+    const isIndexPage = path === '/PortFolio/' || path === '/PortFolio/index.html';
+  
+    // Si on est sur la page index, on ajoute "html/" devant les liens
+    if (isIndexPage) {
       return `html/${link}`;
-  } else {
+    } else {
       return `../${link}`;
+    }
   }
-}
-
-// Ajuster les liens pour chaque article
-articles.forEach(article => {
-  article.link = adjustLink(article.link);
-});
+  
+  // Ajuster les liens pour chaque article
+  articles.forEach(article => {
+    article.link = adjustLink(article.link);
+  });
+  
